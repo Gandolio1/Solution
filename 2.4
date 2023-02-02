@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace ConsoleApplication1
+{
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int R = 6350;
+            Console.WriteLine("Высота = ");
+            double h = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("H = " + Math.Sqrt(Math.Pow(R + h, 2)- Math.Pow(R , 2)));
+            Console.ReadLine();
+        }
+    }
+}
