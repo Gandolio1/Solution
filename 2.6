@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+namespace ConsoleApplication1
+{
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Радиус окружности = ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Площадь круга = " + Math.PI * Math.Pow(x, 2) + "\nДлина окружности = " + Math.Sqrt(Math.PI * Math.Pow(x, 2) * 4 * Math.PI));
+            Console.ReadLine();
+        }
+    }
+}
