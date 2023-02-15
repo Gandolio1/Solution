@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите трехзначное число ");
+            int numb = int.Parse(Console.ReadLine());
+            Console.WriteLine("Зачеркнутая первая справа цифра и приписана в начале " + numb % 10 + numb / 100 + (numb / 10 % 10));
+            Console.ReadLine();
+
+        }
+    }
+}
