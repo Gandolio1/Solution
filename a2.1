@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите трехзначное число ");
+            int numb = int.Parse(Console.ReadLine());
+            Console.WriteLine("Число десятков в нем " + numb / 10);
+            Console.WriteLine("Число единиц в нем " + numb % 10);
+            Console.WriteLine("Сумма чисел в нем "  + (numb % 10 + numb / 100 + (numb / 10 % 10)));
+            Console.WriteLine("Произведение чисел в нем " + (numb % 10 * numb / 100 * (numb / 10 % 10)));
+            Console.ReadLine();
+
+        }
+    }
+}
